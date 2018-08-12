@@ -1,0 +1,23 @@
+.HeadingTextStyle {
+    font-size: 40px;
+    text-decoration: bold;
+    margin-top : 10%;
+    margin-left : 20px;
+    margin-right : 20px;
+    color : white;
+}
+
+.LoginSection {
+    margin-top :5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+
+.VideoSection{
+    margin-top : 0.5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
