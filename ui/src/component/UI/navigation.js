@@ -29,7 +29,7 @@ class Navigation extends Component {
         let renderer = (
             <div >
             <div>
-                    <Navbar color="faded" style={{backgroundColor : "#212121"}} dark fixed>
+                    <Navbar color="faded" style={{backgroundColor : "#212121"}} dark fixed="true">
                     <NavbarBrand href="/" className="mr-auto">VideoApp</NavbarBrand>
                     <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
                     <Collapse isOpen={!this.state.collapsed} navbar>

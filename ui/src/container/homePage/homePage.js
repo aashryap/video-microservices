@@ -19,9 +19,15 @@ class HomePage extends Component {
 
         componentWillMount = () => {
             let expirationTime = localStorage.getItem("expirationTime");
-            console.log("------expiration time--------", expirationTime.length);
-            console.log("------expiration time--------",typeof expirationTime);
-            if(expirationTime.length !== 0)
+            // console.log("------expiration time--------", expirationTime.length);
+            // console.log("------expiration time--------",typeof expirationTime);
+            if(expirationTime === undefined || expirationTime === null)
+            {
+                this.setState({
+                    login : false
+                })
+            }
+            else if(expirationTime.length !== 0)
             {
                 console.log(moment(expirationTime).isBefore(moment()));    
                 if(moment(expirationTime).isBefore(moment()))
